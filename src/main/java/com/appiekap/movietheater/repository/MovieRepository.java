@@ -14,5 +14,5 @@ import java.util.List;
 public interface MovieRepository extends CrudRepository<Movie, Long> {
 
     // JPA Custom method for finding movies by title.
-    List<Movie> findByTitel(String titel);
+    List<Movie> findByTitle(String titel);
 }
