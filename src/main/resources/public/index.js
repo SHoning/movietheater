@@ -38,12 +38,12 @@ function saveMovie(){
             title : title
         }),
         success: function(data) {
-
+            getMovies();
          },
         contentType: "application/json",
         dataType: 'json'
     });
-    getMovies();
+
 
     $('[data-role=dialog]').dialog("close");
 }
