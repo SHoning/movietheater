@@ -55,7 +55,7 @@ public class MovieController {
      */
     @RequestMapping(value = "title/{title}", method = RequestMethod.GET)
     public Iterable<Movie> getMovieByTitle(@PathVariable String title) {
-        List<Movie> movies = this.movieRepository.findByTitel(title);
+        List<Movie> movies = this.movieRepository.findByTitle(title);
         if(movies == null  || movies.size() == 0)
             throw new NotFoundException();
 
