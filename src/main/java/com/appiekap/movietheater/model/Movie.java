@@ -10,6 +10,7 @@ import javax.validation.constraints.NotNull;
  * Movie POJO
  * @author Je buurman
  */
+@Entity
 public class Movie {
 
     @Id
