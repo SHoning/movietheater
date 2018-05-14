@@ -36,16 +36,17 @@ public class MovieController {
      */
     @RequestMapping(value = "all", method = RequestMethod.GET)
     public Iterable<Movie> getAllMovies() {
-        List<Movie> movies = new ArrayList<>();
-        Movie dummy = new Movie();
-        dummy.setId(1);
-        dummy.setTitle("Dummy movie");
-        dummy.setWatched(true);
-        movies.add(dummy);
-        return movies;
+        //DATA FOR TESTING
+//        List<Movie> movies = new ArrayList<>();
+//        Movie dummy = new Movie();
+//        dummy.setId(1);
+//        dummy.setTitle("Dummy movie");
+//        dummy.setWatched(true);
+//        movies.add(dummy);
+//        return movies;
 
-        // TODO uncomment for production:
-        // return this.movieRepository.findAll();
+        // Uncomment for production:
+         return this.movieRepository.findAll();
     }
 
     /**
