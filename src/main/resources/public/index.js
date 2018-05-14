@@ -48,8 +48,8 @@ function saveMovie(){
     $('[data-role=dialog]').dialog("close");
 }
 
-function cancelMovie(){
-    $('[data-role=dialog]').dialog("close");
+function cancelMovies(){
+     $('[data-role=dialog]').dialog("close");
 }
 
 function deleteMovie(id){
